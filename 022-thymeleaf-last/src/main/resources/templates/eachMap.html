@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="stuMap,stuStat:${myMap}">
+    <p th:text="${stuMap.key}"></p>
+    <p th:text="${stuMap.value.id}"></p>
+    <p th:text="${stuMap.value.name}"></p>
+    <p th:text="${stuMap.value.sex}"></p>
+    <p th:text="${stuMap.value.age}"></p>
+</div>
+</body>
+</html>
